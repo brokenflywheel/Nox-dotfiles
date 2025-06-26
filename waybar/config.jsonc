@@ -9,15 +9,15 @@
     "fixed-center": true,
     "ipc": true,
 //modules placing
-"modules-left": ["group/space","custom/workspace","niri/workspaces"],
-"modules-center": [],
-"modules-right": ["mpris","group/cava","custom/empty","clock","memory"],
+"modules-left": ["group/space","mpris"],
+"modules-center": ["custom/workspace","niri/workspaces"],
+"modules-right": ["custom/headset","custom/bleft","pulseaudio","custom/bright","clock","memory"],
 //workspace modules
     "niri/workspaces": {
 	    "format": "{icon}",
 	    "format-icons": {
-		"active": "󰣇",
-		"default": "󰸣"
+		"active": "󰟼",
+		"default": "󰯉"
 	}
     },
 //default modules
@@ -58,38 +58,48 @@
         ],
         "dynamic-len": 88,
         "interval": 1,
-        "format": "{status_icon}{title} 󰦺",
+        "format": "{status_icon}{title}",
 	"tooltip-format": "{artist} - {album}",
         "status-icons": {
-            "playing": "󰝚 ",
-            "paused": " ",
-            "stopped": " "
+            "playing": "󰎇 ",
+            "paused": " "
 	}
     },
     "pulseaudio": {
-    "format": " {icon} {volume}%",
-    "format-muted": "󰂭",
-    "format-icons": {
-        "default": ["", ""]
-    },
-    "scroll-step": 2,
+    "format": "{icon}",
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal",
+    "format-icons": 
+   ["█▒▒▒▒▒▒▒▒▒",
+    "██▒▒▒▒▒▒▒▒",
+    "███▒▒▒▒▒▒▒",
+    "████▒▒▒▒▒▒",
+    "█████▒▒▒▒▒",
+    "██████▒▒▒▒",
+    "███████▒▒▒",
+    "████████▒▒",
+    "█████████▒",
+    "██████████"],
+    "scroll-step": 10,
     "on-click": "pavucontrol",
-    "ignored-sinks": ["Easy Effects Sink"]
     },
 //custom modules
+    "custom/bleft": {
+    "tooltip": false,
+    "format": "["
+    },
+    "custom/bright": {
+    "tooltip": false,
+    "format": "]"
+    },
+    "custom/headset": {
+    "tooltip":false,
+    "format": " "
+    },
     "custom/space": {
 	    "tooltip": false,
 	    "format": "󰁕"
-    },
-    "custom/empty": {
-	    "interval": "once",
-	    "tooltip": false,
-	    "format": ""
-    },
-    "custom/cava": {
-	    "tooltip": false,
-	    "exec": "sleep 3 && ~/.config/waybar/scripts/executable_Cava-internal.sh",
-	    "hide_empty_text": true
     },
     "custom/power": {
         "format": "⏻",
@@ -97,16 +107,9 @@
         "on-click": "systemctl poweroff",
 	"on-click-right": "systemctl reboot"
     },
-    "group/cava": {
-	    "orientation": "horizontal",
-	    "modules": ["custom/cava","pulseaudio"],
-	    "drawer": {
-		    "transition-right-to-left": true
-	    }
-    },
     "custom/workspace": {
 	    "tooltip": false,
-	    "format": "DRAWBRIDGE 󱞩"
+	    "format": "Ad Astra  "
     },
     "group/space": {
 	    "orientation": "horizontal",
