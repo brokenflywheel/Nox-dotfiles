@@ -1,0 +1,31 @@
+# Replace previous purple: #5c4b65 → new amber tone
+[tabs]
+active   = { fg = "#0c0c0d", bg = "#b26d00", bold = true }
+inactive = { fg = "#b26d00", bg = "#2a2d31" }
+
+[mode]
+normal_main = { fg = "#0c0c0d", bg = "#b26d00", bold = true }
+normal_alt  = { fg = "#b26d00", bg = "#2a2d31" }
+
+[pick]
+border   = { fg = "#b26d00" }
+active   = { fg = "#b26d00", bold = true }
+
+[input]
+border   = { fg = "#b26d00" }
+
+[cmp]
+border = { fg = "#b26d00" }
+
+[tasks]
+border  = { fg = "#b26d00" }
+hovered = { fg = "#b26d00", underline = true }
+
+[which]
+desc            = { fg = "#b26d00" }
+
+[filetype]
+rules = [
+	{ name = "*/", fg = "#b26d00" }
+]
+

@@ -1,0 +1,118 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 34,
+    "fixed-center": true,
+    "ipc": true,
+//modules placing
+"modules-left": ["group/space","custom/workspace","niri/workspaces"],
+"modules-center": [],
+"modules-right": ["mpris","group/cava","custom/empty","clock","memory"],
+//workspace modules
+    "niri/workspaces": {
+	    "format": "{icon}",
+	    "format-icons": {
+		"active": "󰣇",
+		"default": "󰸣"
+	}
+    },
+//default modules
+    "memory": {
+    "on-click": "fuzzel",
+    "interval": 30,
+    "format": "",
+    "tooltip-format": "{used:0.1f}G/{total:0.1f}G"
+    },
+    "network": {
+	    "tooltip": false,
+	    "format-ethernet": "",
+	    "format-wifi": "󰖩",
+	    "format-disconnected": ""
+    },
+    "clock": {
+	    "tooltip-format": "{:%Y / %B / %d}",
+	    "timezones": ["Asia/Ho_Chi_Minh", "Asia/Tokyo"],
+	    "format": "󰥔 {:%H:%M %A}"
+    },
+    "tray": {
+	    "icon-size": 20,
+	    "spacing": 10
+    },
+    "mpris": {
+	"player-icons": {
+		"firefox": "󰈹"
+	},
+        "ignored-players": [
+            "armcord"
+        ],
+        "dynamic-order": [
+            "artist"
+        ],
+        "dynamic-importance-order": [
+            "artist",
+            "title"
+        ],
+        "dynamic-len": 88,
+        "interval": 1,
+        "format": "{status_icon}{title} 󰦺",
+	"tooltip-format": "{artist} - {album}",
+        "status-icons": {
+            "playing": "󰝚 ",
+            "paused": " ",
+            "stopped": " "
+	}
+    },
+    "pulseaudio": {
+    "format": " {icon} {volume}%",
+    "format-muted": "󰂭",
+    "format-icons": {
+        "default": ["", ""]
+    },
+    "scroll-step": 2,
+    "on-click": "pavucontrol",
+    "ignored-sinks": ["Easy Effects Sink"]
+    },
+//custom modules
+    "custom/space": {
+	    "tooltip": false,
+	    "format": "󰁕"
+    },
+    "custom/empty": {
+	    "interval": "once",
+	    "tooltip": false,
+	    "format": ""
+    },
+    "custom/cava": {
+	    "tooltip": false,
+	    "exec": "sleep 3 && ~/.config/waybar/scripts/executable_Cava-internal.sh",
+	    "hide_empty_text": true
+    },
+    "custom/power": {
+        "format": "⏻",
+        "tooltip": false,
+        "on-click": "systemctl poweroff",
+	"on-click-right": "systemctl reboot"
+    },
+    "group/cava": {
+	    "orientation": "horizontal",
+	    "modules": ["custom/cava","pulseaudio"],
+	    "drawer": {
+		    "transition-right-to-left": true
+	    }
+    },
+    "custom/workspace": {
+	    "tooltip": false,
+	    "format": "DRAWBRIDGE 󱞩"
+    },
+    "group/space": {
+	    "orientation": "horizontal",
+	    "modules": ["network","custom/power","custom/space","tray"],
+	    "drawer": {
+		    "transition-left-to-right": true
+	    }
+    }
+}

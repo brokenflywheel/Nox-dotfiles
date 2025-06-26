@@ -1,0 +1,93 @@
+* {
+	font-family: "0xProto Nerd Font";
+	font-size: 18px;
+  }
+window#waybar {
+	background: transparent;
+}
+.modules-left,
+.modules-center {
+	border-radius: 100px;
+	margin: 5px 10px;
+	margin-top: 7px;
+}
+label, button {
+	padding: 0 4px;
+}
+button label {
+	background: transparent;
+	border: none;
+	padding: 0 5px;
+}
+#workspaces {
+	background: rgba(0,0,0,0);
+}
+#workspaces button {
+	border: none;
+	background: transparent;
+	color: #868584;	
+	border-radius: 100px;
+	margin: 0 0;
+	padding: 3 3;
+}
+#workspaces button.active {
+	background: transparent;
+	color: #ffffff;
+	border-radius: 100px;
+	margin: 0 0;
+	padding: 3 3;
+}
+#clock,
+#mpris {
+	padding-left: 15px;
+	padding-right: 0px;
+	margin-right: 3px;
+}
+#network {
+	color: #45994a;
+}
+#clock {
+	margin-top: 0px;
+	background: #bb7e00;
+	color: #0c0c0d;
+	border-radius: 0px 0px 12px 12px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: 15px;
+}
+#mpris,
+#custom-cava {
+	padding-left: 15px;
+	padding-right: 7px;
+	margin-top: 7px;
+	color: #bb7e00;
+}
+#custom-cava {
+	color: #45994a;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+#pulseaudio {
+	color: #FF6A00;
+	margin-top: 5px;
+	margin-right: 5px;
+	border-radius: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#custom-power {
+	margin-right: 3px;
+	margin-left: 3px;
+	color: #D32F2F;
+}
+#tray {
+	margin: 3px;
+	padding: 3px;
+}
+#custom-workspace {
+	color: #bb7e00;
+}
+#memory {
+	margin-right: 15px;
+	color: #bb7e00;
+}
