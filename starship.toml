@@ -68,7 +68,7 @@ Pop = ""
 show_always = true
 style_user = "fg:color_yellow"
 style_root = "fg:color_red"
-format = '[ ]($style)'
+format = '[󰘳 ]($style)'
 
 [directory]
 style = "fg:color_fg0"
