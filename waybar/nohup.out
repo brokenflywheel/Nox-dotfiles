@@ -1,0 +1,44 @@
+[2025-07-03 23:58:58.867] [info] Using configuration file /home/noxjp/.config/waybar/config.jsonc
+[2025-07-03 23:58:58.869] [info] Discovered appearance 'dark'
+[2025-07-03 23:58:58.869] [info] Using CSS file /home/noxjp/.config/waybar/style.css
+[2025-07-03 23:58:58.876] [warning] Failed to open bar ipc connection: Socket path is empty
+[2025-07-03 23:58:58.877] [info] Niri IPC starting
+[2025-07-03 23:58:58.903] [warning] Requested height: 34 is less than the minimum height: 42 required by the modules
+[2025-07-03 23:58:58.903] [info] Bar configured (width: 1920, height: 42) for output: HDMI-A-1
+[2025-07-04 00:00:33.061] [info] Using configuration file /home/noxjp/.config/waybar/config.jsonc
+[2025-07-04 00:00:33.063] [info] Discovered appearance 'dark'
+[2025-07-04 00:00:33.063] [info] Using CSS file /home/noxjp/.config/waybar/style.css
+[2025-07-04 00:00:33.069] [warning] Failed to open bar ipc connection: Socket path is empty
+[2025-07-04 00:00:33.070] [info] Niri IPC starting
+[2025-07-04 00:00:33.098] [warning] Requested height: 34 is less than the minimum height: 42 required by the modules
+[2025-07-04 00:00:33.098] [info] Bar configured (width: 1920, height: 42) for output: HDMI-A-1
+[2025-07-04 00:03:39.421] [info] Using configuration file /home/noxjp/.config/waybar/config.jsonc
+[2025-07-04 00:03:39.423] [info] Discovered appearance 'dark'
+[2025-07-04 00:03:39.423] [info] Using CSS file /home/noxjp/.config/waybar/style.css
+[2025-07-04 00:03:39.429] [warning] Failed to open bar ipc connection: Socket path is empty
+[2025-07-04 00:03:39.430] [info] Niri IPC starting
+[2025-07-04 00:03:39.459] [warning] Requested height: 34 is less than the minimum height: 42 required by the modules
+[2025-07-04 00:03:39.459] [info] Bar configured (width: 1920, height: 42) for output: HDMI-A-1
+[2025-07-04 00:03:54.121] [info] Using configuration file /home/noxjp/.config/waybar/config.jsonc
+[2025-07-04 00:03:54.123] [info] Discovered appearance 'dark'
+[2025-07-04 00:03:54.123] [info] Using CSS file /home/noxjp/.config/waybar/style.css
+[2025-07-04 00:03:54.129] [warning] Failed to open bar ipc connection: Socket path is empty
+[2025-07-04 00:03:54.130] [info] Niri IPC starting
+[2025-07-04 00:03:54.159] [warning] Requested height: 34 is less than the minimum height: 42 required by the modules
+[2025-07-04 00:03:54.159] [info] Bar configured (width: 1920, height: 42) for output: HDMI-A-1
+Gdk-Message: 02:23:16.879: Error reading events from display: Broken pipe
+[2025-07-04 12:43:50.381] [info] Using configuration file /home/noxjp/.config/waybar/config.jsonc
+[2025-07-04 12:43:50.382] [info] Discovered appearance 'dark'
+[2025-07-04 12:43:50.383] [info] Using CSS file /home/noxjp/.config/waybar/style.css
+[2025-07-04 12:43:50.389] [warning] Failed to open bar ipc connection: Socket path is empty
+[2025-07-04 12:43:50.390] [info] Niri IPC starting
+[2025-07-04 12:43:50.428] [warning] Requested height: 34 is less than the minimum height: 42 required by the modules
+[2025-07-04 12:43:50.428] [info] Bar configured (width: 1920, height: 42) for output: HDMI-A-1
+[2025-07-04 12:44:21.098] [info] Using configuration file /home/noxjp/.config/waybar/config.jsonc
+[2025-07-04 12:44:21.101] [info] Discovered appearance 'dark'
+[2025-07-04 12:44:21.101] [info] Using CSS file /home/noxjp/.config/waybar/style.css
+[2025-07-04 12:44:21.109] [warning] Failed to open bar ipc connection: Socket path is empty
+[2025-07-04 12:44:21.110] [info] Niri IPC starting
+[2025-07-04 12:44:21.148] [warning] Requested height: 34 is less than the minimum height: 42 required by the modules
+[2025-07-04 12:44:21.148] [info] Bar configured (width: 1920, height: 42) for output: HDMI-A-1
+Gdk-Message: 12:44:37.341: Error reading events from display: Connection reset by peer

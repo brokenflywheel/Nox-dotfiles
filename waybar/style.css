@@ -5,11 +5,12 @@
 window#waybar {
 	background: transparent;
 }
-.modules-left,
-.modules-center {
+.modules-middle {
+  margin-left: 15px;
 	border-radius: 100px;
-	margin: 5px 10px;
-	margin-top: 7px;
+	margin-bottom: 7px;
+  background: #1B1B1D;
+  padding-right: 15px;
 }
 label, button {
 	padding: 0 4px;
@@ -25,60 +26,54 @@ button label {
 #workspaces button {
 	border: none;
 	background: transparent;
-	color: #868584;	
+	color: #1B1B1D;
 	border-radius: 100px;
-	margin: 0px 0px;
+  margin-left: 7px;
 	padding: 3px 3px;
 }
 #workspaces button.active {
 	background: transparent;
-	color: #bf7a8c;
+	color: #D71921;
 	border-radius: 100px;
-	margin: 0px 0px;
 	padding: 3px 3px;
+  margin-left: 7px;
 }
 #network {
-  margin-right: 3px;
+  margin-right: 15px;
 	color: #45994a;
 }
 #clock {
 	margin-top: 0px;
-	background: #bb7e00;
-	color: #0c0c0d;
-	border-radius: 0px 0px 12px 12px;
+	background: #1B1B1D;
+	color: #ffffff;
+	border-radius: 12px 12px 0px 0px;
 	padding-left: 15px;
 	padding-right: 15px;
-	margin-right: 15px;
+	margin-left: 7px;
 }
 #mpris {
-  margin-right: 0px;
-	padding-left: 15px;
-	padding-right: 7px;
-	margin-top: 0px;
-	color: #9ea121;
+  margin-right: 15px;
+  margin-bottom: 7px;
+	color: #D71921;
+  padding-left: 15px;
 }
 #pulseaudio {
-	color: #9ea121;
-}
-#custom-bright {
+	margin-bottom: 7px;
+  border-radius: 0px 7px 7px 0px;
+	color: #D71921;
+  background: #1B1B1D;
   margin-right: 15px;
+  padding-right: 5px;
 }
 #custom-headset {
-  color: #bb7e00;
+  padding-left: 15px;
+	margin-bottom: 7px;
+	border-radius: 100px 0px 0px 100px;
+  color: #ffffff;
+  background: #1B1B1D;
 }
-#custom-power {
-	margin-right: 3px;
-	margin-left: 3px;
-	color: #D32F2F;
-}
-#tray {
-	margin: 3px;
-	padding: 3px;
-}
-#custom-workspace {
-	color: #d93f2d;
-}
-#memory {
+#custom-launcher {
+  margin-bottom: 7px;
 	margin-right: 15px;
-	color: #bb7e00;
+	color: #D71921;
 }

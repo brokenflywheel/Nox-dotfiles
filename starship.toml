@@ -1,9 +1,9 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](color_blue)\
+[](color_fg0)\
 $os\
-[ ](fg:color_blue)\
+[ ](fg:color_fg0)\
 $username\
 $directory\
 (fg:color_yellow)\
@@ -26,48 +26,48 @@ $line_break$character"""
 palette = 'ds'
 
 [palettes.ds]
-color_fg0     = '#d8d8d8'
-color_bg1     = '#0c0c0d'
+color_fg0     = '#ffffff'
+color_bg1     = '#1B1B1D'
 color_bg3     = '#2a2d31'
 color_blue    = '#1d3c4a'
 color_aqua    = '#3a6770'
 color_green   = '#a2a938'
 color_orange  = '#ff9f1c'
 color_purple  = '#5c4b65'
-color_red     = '#d32f2f'
+color_red     = '#D71921'
 color_yellow  = '#bb7e00'
 
 [os]
 disabled = false
-style = "bg:color_blue fg:color_fg0"
+style = "bg:color_fg0 fg:color_bg1"
 
 [os.symbols]
-Windows = "󰍲"
-Ubuntu = "󰕈"
-SUSE = ""
-Raspbian = "󰐿"
-Mint = "󰣭"
-Macos = "󰀵"
-Manjaro = ""
-Linux = "󰌽"
-Gentoo = "󰣨"
-Fedora = "󰣛"
-Alpine = ""
-Amazon = ""
-Android = ""
-Arch = "󰪈 "
-Artix = "󰣇"
-EndeavourOS = ""
-CentOS = ""
-Debian = "󰣚"
-Redhat = "󱄛"
-RedHatEnterprise = "󱄛"
-Pop = ""
+Windows = "󰍲 "
+Ubuntu = "󰕈 "
+SUSE = " "
+Raspbian = "󰐿 "
+Mint = "󰣭 "
+Macos = "󰀵 "
+Manjaro = " "
+Linux = "󰌽 "
+Gentoo = "󰣨 "
+Fedora = "󰣛 "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " 󰦺"
+Artix = "󰣇 "
+EndeavourOS = " "
+CentOS = " "
+Debian = "󰣚 "
+Redhat = "󱄛 "
+RedHatEnterprise = "󱄛 "
+Pop = " "
 
 [username]
 show_always = true
-style_user = "fg:color_yellow"
-style_root = "fg:color_red"
+style_user = "fg:color_red"
+style_root = "fg:color_yellow"
 format = '[󰘳 ]($style)'
 
 [directory]

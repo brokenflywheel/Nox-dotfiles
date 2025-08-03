@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "position": "top",
+    "position": "bottom",
     "mod": "dock",
     "exclusive": true,
     "passthrough": false,
@@ -9,9 +9,9 @@
     "fixed-center": true,
     "ipc": true,
 //modules placing
-"modules-left": ["group/space","mpris"],
-"modules-center": ["custom/workspace","niri/workspaces"],
-"modules-right": ["custom/headset","custom/bleft","pulseaudio","custom/bright","clock","memory"],
+"modules-left": ["clock","niri/workspaces"],
+"modules-center": [],
+"modules-right": ["mpris","custom/headset","pulseaudio","custom/launcher"],
 //workspace modules
     "niri/workspaces": {
 	    "format": "{icon}",
@@ -21,17 +21,22 @@
 	}
     },
 //default modules
-    "memory": {
+    "custom/headset": {
+    "format": " ",
+    "tooltip-format": false,
+    },
+    "custom/launcher": {
     "on-click": "fuzzel",
     "interval": 30,
     "format": "",
-    "tooltip-format": "{used:0.1f}G/{total:0.1f}G"
+    "tooltip": false,
+    "on-click-right": "systemctl poweroff",
+    "on-click-middle": "systemctl reboot"
     },
     "network": {
 	    "tooltip": false,
-	    "format-ethernet": "",
+	    "format-ethernet": "",
 	    "format-wifi": "󰖩",
-	    "format-disconnected": ""
     },
     "clock": {
 	    "tooltip-format": "{:%Y / %B / %d}",
@@ -43,27 +48,13 @@
 	    "spacing": 10
     },
     "mpris": {
-	"player-icons": {
-		"firefox": "󰈹"
-	},
-        "ignored-players": [
-            "armcord"
-        ],
-        "dynamic-order": [
-            "artist"
-        ],
-        "dynamic-importance-order": [
-            "artist",
-            "title"
-        ],
-        "dynamic-len": 88,
-        "interval": 1,
         "format": "{status_icon}{title}",
-	"tooltip-format": "{artist} - {album}",
+	      "tooltip-format": "{artist} - {title} - {album}",
         "status-icons": {
             "playing": "󰎇 ",
-            "paused": " "
-	}
+            "paused": " ",
+            "stopped": " "
+	      }
     },
     "pulseaudio": {
     "format": "{icon}",
@@ -85,37 +76,8 @@
     "on-click": "pavucontrol",
     },
 //custom modules
-    "custom/bleft": {
-    "tooltip": false,
-    "format": "["
-    },
-    "custom/bright": {
-    "tooltip": false,
-    "format": "]"
-    },
-    "custom/headset": {
-    "tooltip":false,
-    "format": " "
-    },
-    "custom/space": {
-	    "tooltip": false,
-	    "format": "󰁕"
-    },
-    "custom/power": {
-        "format": "⏻",
-        "tooltip": false,
-        "on-click": "systemctl poweroff",
-	"on-click-right": "systemctl reboot"
-    },
     "custom/workspace": {
 	    "tooltip": false,
 	    "format": "Ad Astra  "
-    },
-    "group/space": {
-	    "orientation": "horizontal",
-	    "modules": ["network","custom/power","custom/space","tray"],
-	    "drawer": {
-		    "transition-left-to-right": true
-	    }
     }
 }
